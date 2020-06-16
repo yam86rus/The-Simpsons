@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: radial-gradient(#2daed5, #015f9d) fixed;
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section__inner{
+    height: 100vh;
+}
+.section__image{
+    position: relative;
+}
+.section__image{
+    width:100%;
+    max-width: 700px;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    max-width: 700px;
+}
+
+/* svg */
+
+.Lisa{
+    opacity: 0;
+    fill: #fff;
+}
+.Lisa:hover{
+    transition: opacity .1s ease-in-out;
+    cursor: pointer;
+    opacity: .2;
+}
+.Marge{
+    opacity: 0;
+    fill: #fff;
+}
+.Marge:hover{
+    transition: opacity .1s ease-in-out;
+    cursor: pointer;
+    opacity: .2;
+}
+
+.Bart{
+    opacity: 0;
+    fill: #fff;
+}
+.Bart:hover{
+    transition: opacity .1s ease-in-out;
+    cursor: pointer;
+    opacity: .2;
+}
+.Homer{
+    opacity: 0;
+    fill: #fff;
+}
+.Homer:hover{
+    transition: opacity .1s ease-in-out;
+    cursor: pointer;
+    opacity: .2;
+}
+.Maggie{
+    opacity: 0;
+    fill: #fff;
+}
+.Maggie:hover{
+    transition: opacity .1s ease-in-out;
+    cursor: pointer;
+    opacity: .2;
+}
+
+/* Description */
+
+.description{
+    /* position: absolute;
+    top: 10px;
+    right: 10px; */
+    position: relative;
+    top: 50px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 32px 10px #ccc;
+}
