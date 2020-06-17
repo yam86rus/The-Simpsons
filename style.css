@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'akbar';
+    font-weight: 500;
+    font-style: normal;
+    src: url('akbar.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,9 +32,19 @@ a {
 body {
     background: radial-gradient(#2daed5, #015f9d) fixed;
 }
+
+
 .section{
     display: flex;
     flex-wrap: wrap;
+}
+.section__title{
+    position: absolute;
+    color: #fff;
+    font-size: 80px;
+    z-index: -1;
+    font-family: 'akbar';
+    
 }
 .section__inner{
     height: 100vh;
@@ -71,12 +88,17 @@ svg{
 .Bart{
     opacity: 0;
     fill: #fff;
+    z-index: 1;
 }
 .Bart:hover{
     transition: opacity .1s ease-in-out;
     cursor: pointer;
     opacity: .2;
 }
+
+
+
+
 .Homer{
     opacity: 0;
     fill: #fff;
@@ -102,6 +124,7 @@ svg{
     /* position: absolute;
     top: 10px;
     right: 10px; */
+    z-index: 0;
     position: relative;
     top: 50px;
     padding: 20px;
@@ -109,3 +132,26 @@ svg{
     height: 400px;
     box-shadow: 0 0 32px 10px #ccc;
 }
+.description__image--show{
+    position: absolute;
+    bottom:  10;
+    left: 10;
+    z-index: 2;
+    max-height: 90%;
+    max-width: 90%;
+    opacity: 0;
+    /* display: none; */
+}
+
+.description__image{
+    position: absolute;
+    bottom:  10;
+    left: 10;
+    z-index: 2;
+    max-height: 90%;
+    max-width: 90 %;
+    opacity: 0;
+    /* display: none; */
+}
+
+
